@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center">
-      <div className="w-1/2 p-12">
+    <main className="flex flex-col-reverse lg:flex-row min-h-screen items-center">
+      <div className="w-full lg:w-1/2 p-12 flex justify-center items-center">
         <Image
           src="/home-screen.png"
           alt="home-screen"
@@ -13,8 +13,8 @@ export default function Home() {
           className="rounded-3xl shadow-lg"
         />
       </div>
-      <div className="p-12 w-1/2">
-        <div className="flex flex-col items-center space-y-4">
+      <div className="p-12 w-full lg:w-1/2">
+        <div className="flex flex-col items-center space-y-4 pt-10">
           <Image
             src="/openweight-logo.png"
             alt="logo"
